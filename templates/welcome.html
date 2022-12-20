@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+{% block content %}
+<h1> Welcome to the page </h1>
+<input class="form-control basicAutoComplete" type="text" data-url="autocomplete.json" autocomplete="off">
+
+{% endblock %}
+
+{% block script %}
+$('.basicAutoComplete').autoComplete();
+{% endblock %}
